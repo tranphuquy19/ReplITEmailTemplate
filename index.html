@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<style>
+		html,
+		body,
+		div,
+		span,
+		applet,
+		object,
+		iframe,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		blockquote,
+		pre,
+		a,
+		abbr,
+		acronym,
+		address,
+		big,
+		cite,
+		code,
+		del,
+		dfn,
+		em,
+		img,
+		ins,
+		kbd,
+		q,
+		s,
+		samp,
+		small,
+		strike,
+		strong,
+		sub,
+		sup,
+		tt,
+		var,
+		b,
+		u,
+		i,
+		center,
+		dl,
+		dt,
+		dd,
+		ol,
+		ul,
+		li,
+		fieldset,
+		form,
+		label,
+		legend,
+		table,
+		caption,
+		tbody,
+		tfoot,
+		thead,
+		tr,
+		th,
+		td,
+		article,
+		aside,
+		canvas,
+		details,
+		embed,
+		figure,
+		figcaption,
+		footer,
+		header,
+		hgroup,
+		menu,
+		nav,
+		output,
+		ruby,
+		section,
+		summary,
+		time,
+		mark,
+		audio,
+		video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+
+		/* HTML5 display-role reset for older browsers */
+		article,
+		aside,
+		details,
+		figcaption,
+		figure,
+		footer,
+		header,
+		hgroup,
+		menu,
+		nav,
+		section {
+			display: block;
+		}
+
+		body {
+			line-height: 1;
+		}
+
+		blockquote,
+		q {
+			quotes: none;
+		}
+
+		blockquote:before,
+		blockquote:after,
+		q:before,
+		q:after {
+			content: '';
+			content: none;
+		}
+
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		* {
+			font-family: Monospace;
+			line-height: 17px;
+		}
+
+		table {
+			max-width: 500px !important;
+			margin: 0 auto !important;
+			padding: 20px 0px;
+		}
+
+		ul,
+		ol {
+			margin: 20px 0;
+		}
+
+		li {
+			margin-left: 30px;
+		}
+
+		.text {
+			font-family: Monospace;
+			color: #c9d3d6;
+			font-size: 15px;
+		}
+
+		a {
+			color: #55B0E1 !important;
+		}
+
+		.featured {
+			width: 500px;
+			max-width: 100%;
+		}
+
+		.logo {
+			width: 200px;
+		}
+	</style>
+	<style data-premailer="ignore">
+		@media only screen and (max-width: 800px) {
+			.featured {
+				width: 80%;
+			}
+			.logo {
+				width: 60%;
+			}
+			table {
+				padding: 10px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<span>Having trouble viewing this email? Click here to access the <a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlLArUDnrx2j8rl57HVQB2HRMPza3YBOkIBW-2Fu7QN9Fj4N4zNXBHp-2FfF7A0cLfVHgjg-3D-3DcMBL_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq5xJPCDHdctSShKCAqC5J2a553m5L7ukc3Wy2n7S84tNu95b7N3d3i1FRZv8VRNdajy8WPnU2e-2BKshM9Biy-2BpCbyBrlM7dD8RsLXYGYLRWvHMOHfGegFxDCGkG11ZY3OdG0TKV0zdRZsMGHC6KhahGyVeCG4-2BpAKiV3or-2B934cPRHsRm6ahuLhbwKT47KcLiJuuRR7awPrxw0u6OlfZYJjHFfKOdLJNjgN5-2BFeGsqk-2Fmg-3D-3D">web</a> version.</span>
+	<div style="background-color: #0e1628;font-family: Monospace;color:#c9d3d6;font-size:15px;padding:15px;" bgcolor="#0e1628">
+		<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#0e1628" style="margin:10px;">
+			<tr>
+				<td align="center">
+					<a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlKyknZ1170ilFmt9sdmeOhw-3DS6TS_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq4Ck0556hPXwgHxkR9IcmdShIQ6t00H2FGNPMwHIiOvR12GJ1QQYWu28gZ3yVgk-2Bh6GlI3xQ8w3HJ-2B4UrLvHfWaUQnGkt-2BY9j4kktDRMmTfycoX7C2rVd92M3mwxSmbgEFISAbbTMjno8xGmHKYK6Gje5V1j2wuxY0wSjYi1lF6IGKwFkRlsB-2FyLQBpTOJy1xK4fVj6Rv9bHUWTtKVBO3x95x0HLKlvPi-2FVA8hfdPXBQw-3D-3D"><img src="https://newsletter-images--timmy-i-chen.repl.co/logo-light.png" class="logo" /></a>
+				</td>
+			</tr>
+			<tr height="20" />
+			<tr>
+				<td style="color:#33cccc;font-size:20px">
+					<img src="https://newsletter-images--timmy-i-chen.repl.co/prompt.png" alt=">" height="14" /><b>&lt;!DOCTYPE EMAIL&gt;
+
+</b>
+				</td>
+			</tr>
+			<tr height="20" />
+			<tr>
+				<td style="color:#eded65;font-size:20px;">
+					<img src="https://newsletter-images--timmy-i-chen.repl.co/prompt.png" alt=">" height="14" /><b>&lt;title&gt;Your replit newsletter&lt;/title&gt;
+
+</b>
+				</td>
+			</tr>
+			<tr height="20" />
+			<tr>
+				<td>
+					<span class="text">Hi Tr=E1=BA=A7n,</span>
+				</td>
+			</tr>
+			<tr height="20" />
+			<tr>
+				<td>
+					<span class="text">
+      Welcome back to this edition of the Repl.it newsletter! In this editi=
+on:</span>
+            <ul>=09=09=09=20=20
+=09=09=09=20=20=09=09=09=20=20
+        <li>Replit.com</li>
+
+			  <li>Replit Teams for Education leaves beta!</li>=20=20=20=20
+
+        <li>Project due dates</li>
+
+        <li>Jobs Jobs Jobs</li>
+
+        <li>No-setup unit testing</li>
+=09=09=09=20=20
+        <li>HTTPS by default</li>
+
+        <li>Local hackathons</li>
+
+        <li>Goodbye and Privacy</li>
+
+            </ul>
+             Oh, and if you're curious, the language used in this newsletter is... <a href="http://url1361.repl.it/ls/click?upn=0jRJpJPKuloXVZFoLLCE-2FGfSD45HR5DcPMNHD12WqbFjSdkUSUITFCOxCP9oSjXUfy3O_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq4W3D68zasOwMxj6CuN1VHaPuHa6E3MLAQFZ5qqOwGBW6oZjdQghC3GDoWOBUWQgmFMH5bh7kRD-2FQw4j3FKeh0XCv2JiUvhJ9iSjYwYb29akt-2Fa82Ph77q6H6VUx9fwfvONnGUbYgkmbludLGfmPBi-2BSXk-2FvFxBDF8xuqW0LuyS-2BHGeUlsBfS38fY28yIGepQAOEvkGt5wvpNHir-2Biie3GkFgxJTUn4wiPeKM-2BRj4tpOQ-3D-3D" style="color:#55B0E1;" class="link">HTML</a>
+          </span>
+				</td>
+			</tr>
+      <tr height="40" />
+      <tr>
+				<td style="color: #ff9966;font-size:20px;">
+					<img src="https://newsletter-images--timmy-i-chen.repl.co/prompt.png" alt=">" height="14"/><b>&lt;h1&gt;Repl.it is now Replit.com!&lt;/h1&gt;
+
+</b>
+				</td>
+			</tr>
+      <tr height="20" />
+			<tr>
+				<td align="center">
+					<a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlNPhxhqYF7kOL6C4FuYcghqoC-2BVHPN0ELts2rIYA-2FJvfRU-4_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq6Wz55RbQi-2Fc1ZYs2ZUJfHp1xDUIYqvPCI0jPFLW455iEXZJpkFnX7fh35dogTZus9qdnHLBgNAg-2B1c1wADTbnTpKrPciowaQ41l13-2FMWfGM9RonFxT14-2BwCqb25tKDjX6NvHHjBLugilbCZoPmI3YsLHQ8XqVvYV9l9GmD8PpVw1vSZkdbGqu6dNfBIgquaTTTfwoy-2FfbIPigbdRarWBzq-2BA-2FvHhdg94IJwNuT8XS0Cg-3D-3D"><img class="featured" alt="Dot com boom" src="https://Newsletter-Orazca-Relic.util.repl.co/dotcom.png"></a>
+				</td>
+			</tr>
+			<tr height="40" />
+			<tr>
+				<td>
+					<span class="text">
+           	When we started Replit, it was just a website where you could run code online. So the name, "repl.it", made a lot of sense. Today, you can do so much more than run code. You can teach entire univerities, share your projects and help other people solve programming problems. We've seen our website utilized in ways we'd never imagined. Now we want our domain, the first thing people see, to reflect the progress we've made. We're moving <a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlKyknZ1170ilFmt9sdmeOhw-3D_Mgs_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq57gr5foe8-2Bk-2F7oU0YpBf1T0i19Al0Am4rMWuE6bqDuyDJgInjalIMuUNB39USxogncWYHCaHHbYalAkWofCzwDuikfODOgCLE8jsNYgCL2AGEMzftaa9ZRjgqnKxx2uJCjmnILfj30RfaADKJS4Mt-2FLEIMX92U7QVZ39I8Fh-2FtE3A3k49G90cDVF5sydZB34PAuQYfngNHA0OT6fSdUKJ7a08uujGTQULOFiLZuLf2NA-3D-3D">repl.it</a> to <a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlJYAEbytyHPRaKZPUgEe-2FOY-3Dw5ce_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq5fl1odB91a-2F6zORtSbaHVoJNxyWX2uxhjnOj9-2BTYu85KGcw84UbBUPDrEJwlzHnOwfMk23VeJEDbO8W3yo338Bh2Z7uhqRcmbsKyg6pZ-2B1dLvORw3-2BH3vnrzbXjDAZHFGU5LPAQ7rCsy9w0XdYvm-2BAW7A-2FEOxukQwcp-2FLfM27A0wWrKXGeEzQvcAqpvZEXgtk19i6PpUJsk29umTKqvmAcYV2PdbLdLsgOPJsf82EDGw-3D-3D">replit.com</a>. Don't worry, this change will have zero impact on you. You'll stay logged in, and we'll redirect all repl.it connections to replit.com. For more information about the change, checkout our <a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlNPhxhqYF7kOL6C4FuYcghqoC-2BVHPN0ELts2rIYA-2FJvf5bGQ_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq4LmPbsZwnvvNkPH4IlDKBEyUzBuspVMUIEqyTpohQZZetzGj0eouTVhXcX1oLy8-2F-2FplP-2FWIBJ-2FyeGPgpWOoDc3MV4-2Fjw3Y7H1uWoqDERsRCPyI5PRZ6cyelV0m0YhEY-2BHOMC7XK0RxoRXvVDKytx3ZRyH9RuQW5bq3Q-2B1MEHSm5idXLinQjQ0xUmF7hmaou3tVXNUtOEfrQkOuh90XyUbQNs1OwgNS-2B06OIORJaHr7cA-3D-3D">blog post</a>.
+					</span>
+				</td>
+			</tr>
+      <tr height="40">
+			<tr>
+				<td style="color: #ff9966;font-size:20px;">
+					<img src="https://newsletter-images--timmy-i-chen.repl.co/prompt.png" alt=">" height="14"/><b>&lt;caption&gt;classroom experience&lt;/caption&gt;
+
+</b>
+				</td>
+			</tr>
+      <tr height="20" />
+			<tr>
+				<td align="center">
+					<a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlCIdABf66764q7MPte2-2BCa4RJ6a70EXuKR25sYs0RbqQvGRk_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq5V5tLi7TKotArDYlbM7w7y2YMOV4WyGLl3VAJG8mZOx8RPsQJ21f-2Bg6PU28rnxVEAXOL-2FpVkuPkUNg1Hwzr6ZXDTAa-2BLXdhoPW8DYpgBieNxBVrKgFEATXxysDGhAgQgSNyfkwGIdq1IzNDK242I3meYOXKqMScrXFk4t5QRlfHns05snMsm2SGzt7vSBL9isYE4zhDtFnqzb4aPTqV-2FI27LgVOM8L0b1nYv9zzo3Jng-3D-3D"><img class="featured" alt="Repl Teams for Edu" src="https://Newsletter-Orazca-Relic.util.repl.co/repl_teams.jpg"></a>
+				</td>
+			</tr>
+			<tr height="40" />
+			<tr>
+				<td>
+					<span class="text">
+          In 1992, science fiction writer William Gibson said =E2=80=9CThe future is already here =E2=80=93 it's just not evenly distributed=E2=80=9D. With Replit Teams for Education now out of beta, we want to bring the future to you. Our goal is to help computer science teachers bestow the next generation with computer superpowers. We listened to early feedback from the gracious educators that tested our tools, and wrote a list of things Teams for Education must have before being published.<br><br>
+
+          <li><a href='http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlOwHbdxtkj39EJN4BJxyzw4ztdDO8PjtrFBeL27deW-2BW9ZB8_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq7CtyTIrMYEpJHHlCTzl3-2B27Yg7RZMmu06H9p-2FsNhUGV-2B5z5FpD0sH-2B4b4yR6W3xPjsKMFNDETD-2FramtMW9qsFX-2Be3dH44LusNgw2hSlGL-2FCMTAnpNNPWE6byT8ynLmjdXdta-2BgwVusEFFtEUAO6O8SP313HzWcjd8BEJNTk9XexhGjyZF8YAzgFr2eiQkokm2qG9Nnr1gT-2BP6sNAsbRov36PxnF4h-2FRX4zXjY-2FOBP-2BOg-3D-3D'>privacy compliance (FERPA, COPPA, GDPR, and more)</a></li>
+          <li><a href='http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlJBZP4Pe-2BS7QcANsRS85BzhHKOUBzMos5Z2PmdyxrbwK-2F6w4cHKRqtyt8rTBxzzYKg-3D-3D9Jxh_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq65j6qdWRMlUyuiSYYL9NiI-2FaZK60kD3Euqk5L6atd3nJ2ed1pSnYi7rMBNJBL44waEQPise7lE0qzYc43EZfOqt-2FcM-2BsTiXSc-2B808BOeH2-2BAsgFSLdcP2NJSMDX8605KV-2BriHmZXySGEN4wf3HITvfJWkoa2wlu2dGyXxyzUE7bEnR9YKHPHfEf7gFPom4cZ-2FrqdPQ-2FlrCJgtAw0PrGfM6i-2BQ4GX8omSiaiECqcJobKg-3D-3D'>code annotations for feedback</a></li>
+          <li><a href='http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlM-2BRqw8-2FzzZqFmhAgyVdDMsgbV-2FEnbLjMRWhXoeBVVXOvXeVvC6sZRbjmMhgUB75vA-3D-3DPXxD_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq4djRJFRxnv1Aq2vJPv7rZRkcmf6xNBcNCsqSm0fRaOK4ov3dZ-2FNb3TSaKQPef9n3i8silBE8Eso1Z-2BEbIYkB-2FQoSuy6GNoVUXHqT1umkZfeSGxBScSb-2FETFZavPD-2B6eEXs06GedzLw6lQtFwI4c2AmL8yCCOO-2FVuibMBLxdqm465UR6nt0HQXiNarTQqfiSyXWaROnC4GHcDbTaQds8HjVznhgv5-2FXkM2IPoBxOmW4Ag-3D-3D'>group projects</a></li>
+          <li>simplified pricing</li>
+          <li><a href='http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlPRrqPzJ15YsQIdwJX9RGIJcpC5QmIJy1LND5cEdezdXsl7-2BqU-2FbaSZ24ldW6vZHFIhA6c7Pf6Hy4-2FZgTcUrGag-3DTUe0_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq4oyDxirXYkvVatuJVibWUId63qO8LawaYATgmgN8VZ-2B-2B2WscjAEufb1C4JFSKlS4KRIXYkxheiCsgqOfspSjhVPY2svDqeVbm1yztQjYuXkF9V-2BpgyCtbvyWf5n4nQ4qYbffzuiQ8-2FSQFAra63pbLvdxvOhUnVJFjn-2F4mbC7H9lt6gIxuRuvmxLPi0DkVcRRmdWPRMPxz0ttZVwH1820Vyr6s-2F0i-2FrOC57e5kiZ57E2w-3D-3D'>feedback workflow improvements</a></li>
+          <li><a href='http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlE7VEf5bqsGNzK2dgri2QQzcE7pd8tc-2FphI7UKcNhxX8Z1e1_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq6kjdhrUEmLRdjYUqQWPbv5vrOL6JZr17H39Wg7oq-2BYXJIy7QgkibWKveitK4HUCNi2CcPY-2FpsNMG2ofl2kPsYMqwMKjjD88tLdINnMP-2B-2FJrNBfs7fhhyPXmBpyYHVka-2FDLpoN7eCGU8KBUyYR6Lh5juQo-2FfgEKfmd5Xnzo059wzyDCeyVzkXSrW-2Fg5w5pcEZPkEz-2Br9AplsWOONqTW6a127YdWQiPY3dsEaZZgMHDPtA-3D-3D'>stability improvements</a></li>
+          <li><a href='http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlEKos3uAvXTvmU7VDkvt-2FRb4RtIYBqCqYhVesck0f5I4R_jb_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq7SQK06StWl9MjX0vcLM8U-2BUoa1z-2B0zyknZd-2FZMon9MbvPodHhdV4feYRiqGVuTvReFCEFmLKGU23hNkL-2ByEJ2zivoVbM4kK8JcfSqEQkv4mSLPCqHGzk-2FMn5BLhBNc09LEGNh-2Fi-2BvdjYWC5K3yDjAp9zYGhA-2FUwCHNafp9HmYtV-2FkRBawcok8OL3vcde02yywztqP5Q2sZytwAeww17qeyNu0bSkxVEgVWhFc25sd1aA-3D-3D'>input/output autograding</a></li>
+          <li><a href='http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlGiizn6Bg056-2BM6OX1xqXTLvroReaqTmRnHmQdq1UztdwZPt_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq6cPnV9-2F0QL75ROkL5I235CpZeP3MOFOAWDYS2rkDcDEb8h3vCJJtR8A-2Fycd5P2MejiHwVcGGybJ1rd3-2BsHNfMBUfcXriqDfyt9J3L27fASz5qLBKF2tDtXNuxeE3zYbRo-2FDTz24AzIsKqoD5RIKXgXecFUNudPp4eb0x2CujvwewFHAzD5M9ibzKD726QdXvzBbs-2FYTjUa0f1LvOWYKqOatHhJ27R-2Bj5Z5F7DWj-2BsYuQ-3D-3D'>graphics improvements</a></li>
+          <li><a href='http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlPRrqPzJ15YsQIdwJX9RGIIEGYFhSgfOoPz-2FJEjDD9BCA2Tfry0a-2Blif9ObVmrz9lQ-3D-3DZ1KL_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq749EIpqXAuHd2LZ4RC-2BVPlyKeByPpcmpEBXK3z7rNVSRr7WlOA2gfhSILqlTVSq3ABf9Nr7hqAd2HXt6h-2Byo5lMZYHH8k2MYRo84il60cLM1ZXHsS9DrVr7WucAGVX4aDcLnevqucAqIaGMjHphGfT2WIH8a-2FJgkGWOgr6lDYZ-2FJQ4G-2BlvTMRnYn7ONQOaIhe6i49ut91z2K6k6PLrLmzGsV4hYd5-2FFCZVmdXNUs-2F9Nw-3D-3D'>better project organization</a></li>
+          <li><a href='http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlPRrqPzJ15YsQIdwJX9RGIIqYc52bnsvj9cYpV4pX-2FLP8U-2FLi887ooJAZy84DfEbQA-3D-3Dd7Q__7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq5exPTdX9lxRZO0WrmiJyKtL4T635mdpENVnE8H-2FrkG6yNlnxQ2UbIlG1RNzBBCXxCBn4WzaXk5Dufcv3LMEOE3j7NvBp2qyZi3YBeyVYZKYMqXOcyojYV0oEn1puE23-2FnyPqj8YAXvBu14-2BpXbjBqWbXeBtYnEcyPrCunw3c8pbF9AOWZEu2y14eDrk5ZLzP8wGZynttLQLDB1IUjYnaSehq-2BkGxGx7V7OJDzFx-2B5DRQ-3D-3D'>project sharing</a></li>
+          <li><a href='http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlDSeTZKZubj3oV5D7GDEjEdPWmmtYXzH5akNdx1aoNECvQXd_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq6ysqk-2BOA5dEmYcDNh7qMLH0W1R42UsZgVd7Q4G8z0Rz0ezGy-2FLtx8cXy39QvRS5qy60DWKT0L7WQtoFErG6WkT9kRKOSxwy8w-2F8MAQudjw3FmVfP2EgW-2FQy8lOFwKmIL0cgpexf4rLMizpi74bSLCKnNmXI78nP6YS6vCgnNPuIDR0KkKPQaBl6yO5DLSWD8dIF5t4TYfUrOpVuvFVK0p8rwUdckXE-2Fnt03GrEn7U1-2BA-3D-3D'>built-in unit tests for Java, Python, and Javascript</a></li>
+          <li>project overview and reporting</li>
+          <li><a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlCIdABf66764q7MPte2-2BCa7XvixhkKnCGqunTVDDIX0C3sxZxEJb2jQv97rlsPH5VA-3D-3DzTGH_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq51-2FbDRH4XTvjIJuI4TnkKnejctyGgkqiMb4ev9x5Nwz-2FmtRXf4WvRevQZH3U-2BsJ3iR7rIeDBVISy-2BAH6pUDOO-2FAZCW2zbbtkQwwD7b2QGeyx8aH-2BAkdOyf75gDFgxPknsChybjlEPckYlA-2Fg1bBm4MaRNazW9zNhfJ-2BsOpRuWdTelK7g5E17eHdKLjw0o3KX8ErO99cizBf1biZvwRUzNyW-2FQ3GikjuXwfrCngOaD9PA-3D-3D">Due dates for assignments</a></li>
+          <br>
+
+We=E2=80=99re going to continue shipping out improvements and updates for Teams for Education. If you=E2=80=99re ready for the future, <a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlJFgg1rio6NJjTIU1fblx757n7xFJTNQhf47no1Wla6uatiB_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq7hn2Fo4bXJXtO1DRJzYxfiXcYD3sNX7WA6yV-2F-2FIqFoE2RpevEoNGNBeg-2B-2FFKEzdCT7PLyfSaE-2BvMaOGa-2FRafe-2FDinKU0-2B6gVB1EbJWcoswJAQ79pKbv2CUgLqVJvm78nk3bqs-2BnbE15y-2FedNZNO5pm2S1QDpp-2BcXjcN6O6TGK63HuubnleDTq29og14l2YM32LJGdrpgBa9W8kb6mM-2Bv7jTBwtxJfkmID2J-2BXMCYhsAw-3D-3D">sign up for a free trial here</a>. If you=E2=80=99d like to learn more about Teams for Education, check out our <a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlCIdABf66764q7MPte2-2BCa4RJ6a70EXuKR25sYs0RbqQo4Yk_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq657tz0GPDAtqXMhNU8c22zfanYZLz-2FNiFPCA3PVxvDWFfKIb-2Brn-2BPI7sA-2FDF7kvm9ek3GQgGw8LihHq06jLC8WyBWUbq1rVPk90ndPyQKQ6aYuuUGda4Q8P41gHRA7Z-2BpEeIHfnlSrc81WAgRszdy7IoJ0ok2Qr6Nof1wlT0r1H-2F2Fkm953ve-2BNS1Inv3N7R-2BoZxvxs481a2LrfXwbiTupesUPhxtfRaVzJBwKpbZLnw-3D-3D">blog post</a>.
+
+
+					</span>
+				</td>
+			</tr>
+			<tr height="40" />
+      <tr>
+				<td style="color: #ff9966;font-size:20px;">
+					<img src="https://newsletter-images--timmy-i-chen.repl.co/prompt.png" alt=">" height="14"/><b>&lt;form&gt;&lt;button type=&quot;submit&quot;&gt;Apply!
+
+</b>
+				</td>
+			</tr>
+      <tr height="20" />
+			<tr>
+				<td align="center">
+					<a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlKG1j2z7UPuhla6-2FBsxHyuFQjka-2FxM9V8FkQn4zsIncUpHMZ_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq4eWt1G0sgjmPUqh5haRAS9g4q5doJ-2FW-2FdCTM6jFJVvha7Eo7dcNiWLh8ojrinuW6HvP-2B7r-2FjGiddH7zSkfQ7-2FFD7XA7nLfJAWWMF2R7LgiixDy2pm8j9Ojzz6CfdiMVeXzoP2ZNJjlvaCB7RadQaHMGs7oQUbFlFi3BntoXFR5HCHQCrQ3fMzdTfX9Kh1N8QCYJ0fUsND9eIdQ1hQsm53fbw0wPMT-2FR9yn5EbkO6u9eA-3D-3D"><img class="featured" alt="Jobs!" src="https://Newsletter-Orazca-Relic.util.repl.co/hiring.gif"></a>
+				</td>
+			</tr>
+			<tr height="40" />
+			<tr>
+				<td>
+					<span class="text">
+           	Looking for a job? Look no further, Replit is hiring! If you are a designer who codes, or a product engineer, we need you! Want to be an executive assistant or social media and community manager? You can be! All you have to do is <a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlKG1j2z7UPuhla6-2FBsxHyuFQjka-2FxM9V8FkQn4zsIncU6_XB_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq4mWg8-2BP-2Fwpg-2B-2BKM2CHFyGHpxZMnjjLMhX2hAp6wSMbGZXnehZUI9PX6lPUINN-2BG-2BoO3m5SjY0wZ00-2F0jcMzF1RsF8J-2FH8GQycPu4Bq4NVjpqYTtlkiuiOdrYFSpU55v31-2BndJ50HkPucLbemU0pgShmpaTgrbDvFSMvjoaN-2Fo69WQWYuAjDpdt9gh-2Bm3bRLnqtek0jc9I5zwGxl2Cn526BBuFuRGBJJ38nNI3aySxpYQ-3D-3D">checkout our job page</a> and apply! At Replit we strive to create an inclusive environment while maintaining comradery and cooperation. All walks of life are welcome, and we=E2=80=99re ready to give our all so that you can achieve great things. For more information about our open positions and how to apply, visit our <a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlKG1j2z7UPuhla6-2FBsxHyuFQjka-2FxM9V8FkQn4zsIncUIjy5_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq4XUMHqUJ5Id4yMVojaXXd5as5YGIk83jWN1jpjU-2BaA7jGDkW3gOgmA-2B58mRuGsm2oWWIBrGCfXFowAkmILC8ukHb393RdyBOb1yy0oMriKatW7BQDDJ07vlF952yFrR7c3pRfQWhaBa33xsbXIIB0kf5qqLgRtKBqSBPaREmniY5vC-2BvSsNkaDA5RxuDi7HrfIUzHyft8C30vZotZkogZDG5yuz4IoraddAeRjM0IvAw-3D-3D">career page</a>.
+					</span>
+				</td>
+			</tr>
+			<tr height="40" />
+			<tr>
+				<td style="color: #66ffff;font-size:20px;">
+					<img src="https://newsletter-images--timmy-i-chen.repl.co/prompt.png" alt=">" height="14"/><b>&lt;meta name=&quot;new&quot; content=&quot;Unit Testing&quot;&gt;</b>
+				</td>
+			</tr>
+       <tr height="20" />
+			<tr>
+				<td align="center">
+					<a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlDSeTZKZubj3oV5D7GDEjEdPWmmtYXzH5akNdx1aoNEC_FtW_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq4RkHBZD1SVMj6rbIyvakhu4-2BxP0sXwLBzFggKFSc0I9TVerILZNcMY4GTyZ8NXcp5yEsI3W-2FJ8XKtj8MeWx29VmmKyy3rnREjcOr3rLrswkzbXdqzknqOo8iAlHBh1HwTPkCkGGkJsVJIk97UFWZb5TLBrX5ViluPgdTimfwlX68MAlBYrYHSJMn6flyYbBgTISACchfbAxefrDm48AoitFF-2BSFDdkxzQRf4IBn-2Bu9kQ-3D-3D"><img class="featured" alt="Unit tests" src="https://Newsletter-Orazca-Relic.util.repl.co/unit_tests.gif"></a>
+				</td>
+			</tr>
+			<tr height="40" />
+			<tr>
+				<td>
+					<span class="text">
+           At Replit we=E2=80=99ve offered, and always will offer, a zero-setup programming environment that=E2=80=99s easy to use while still being powerful. Today, we take that one step further. Introducing our zero-setup unit testing environment. Easily create tests to run your program how you expect it to run, and prevent bugs from reoccurring. We use unit testing all the time, and we know how important this will be in supporting large scale projects. At the moment we=E2=80=99re keeping this feature to our most popular languages Java, Python, and JavaScript, and use the most popular testing frameworks for each respective language. For more information on how to get started, checkout our <a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlDSeTZKZubj3oV5D7GDEjEdPWmmtYXzH5akNdx1aoNEC_SJb_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq4-2F1m7QMXCizeQEwsC0HmoROzBil3E4ihp23Q8TPQ7Mkbm84mnYV8R7ZXBTPK5UMe4S-2FREAxA2IJEQgSezhkKz0N73zuzQt3ByARhfjPQ9H6b3EB9nfg24qor6YrIifTlSP24yZbGwAxdD00m8-2BKWkheUkD4zRYwyXzJB6cDtHAAqfTYc8m2YkYRlGi5JhZgsKveyEkkfGQ0XGSBe4qWuiSPdgFBrGzCGewnF-2F323bclw-3D-3D">blog post</a>.
+
+					</span>
+				</td>
+			</tr>
+			<tr height="40" />
+			<tr>
+				<td style="color: #82ffa9;font-size:20px;">
+					<img src="https://newsletter-images--timmy-i-chen.repl.co/prompt.png" alt=">" height="14"/><b>&lt;a href=&quot;https://secure.website&quot;&gt;christian&lt;/a&gt;
+</b>
+				</td>
+			</tr>
+			<tr height="20" />
+			<tr>
+				<td align="center">
+					<a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlGzw4Xt7C9nYOEHQ8wCOM-2FkqfzEZ1XYVqKelvOznE-2F1d-7gw_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq56WrIlcansWjnsokJdxJbPOV9zwftqmbibBi42geOxqjEvdXmz9D8bsJAjOZwyIVG8CWsmsPU78xCvpDZ9nvdSEAwDX6ZPROeSchOxZNlbKXqI9g3DTolZnvDMX4fc68cf1atj6JBe0oqBryQIrjWbt-2FAs5QGchRHtqstWRmcs9SQU9NSerNbfrIUqzOvLi78ewbX8FQju5b8ZjkaLIuswWgk6z2bVFymR8qvpLpTEaw-3D-3D"><img src="https://Newsletter-Orazca-Relic.util.repl.co/alwayson.jpg" alt="New job panda" class="featured" /></a>
+				</td>
+			</tr>
+			<tr height="40" />
+			<tr>
+				<td>
+					<span class="text">
+In 1991, HTTP/.9 was introduced to the world. It wouldn=E2=80=99t be until 1994 when HTTPS would be invented to encrypt online traffic. Even then, it was largely marketed as a tool for securing credit card information, not for the average website. Today, Replit is now HTTPS-first, all HTTP requests will be redirected to an HTTPS connection. This comes with privacy, integrity, and security benefits to servers hosted on our platform. This also applies to every HTTP server hosted on replit! If you=E2=80=99d like to learn about how we accomplished this, checkout our <a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlGzw4Xt7C9nYOEHQ8wCOM-2FkqfzEZ1XYVqKelvOznE-2F1dp8hi_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq4gzzJf8fRoVlw5-2FXDNde7aA27cZ-2FapI9sX2iQG-2FNRRBgz20C1m5e5agD9rcQ4CuWx9FzclPd7QBlqTtR-2FtlGb0gLasRFl3J3QWUq-2F0P18rSHE8bSSntEuMB7eEb2njX9ryawtA81cFk0HVc-2FvQ5KkhLSVabgqBrzWbdLcp5y3usOjmo1eV76VJO7e2-2FZfS2uVNUK52CP1VOKUsxtryt2nXWmPqIeTE9gQXDYVgPhBHpA-3D-3D">blog post</a> where Newman Hu and Sidney Kochman talk about how they accomplished this tricky challenge.
+					</span>
+				</td>
+			</tr>
+      <tr height="40" />
+			<tr>
+				<td style="color: #82ffa9;font-size:20px;">
+					<img src="https://newsletter-images--timmy-i-chen.repl.co/prompt.png" alt=">" height="14"/><b>&lt;em&gt;Local hack Day!&lt;/em&gt;
+</b>
+				</td>
+			</tr>
+			<tr height="20" />
+			<tr>
+				<td align="center">
+					<a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlJvwTIJVGs-2FShJCkqD45-2FPeHtPnTNTaGYRAkIg7Bd8Aq2Psjhn5r3b5ey8h5dvEcetFeWISuFOLMOJYcRIWJTyhN72kTaRzzDpIauZAyqGEKrgLOZMJTfGjc7pWKXYnqhA-3D-3DUHF4_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq6OYeuNQWRppGobITyuUmo8pdTmln8J8jDEmDrXQTJDf0R1tgpGntwJ4qPqcEV8VsMjHWYzmGIfNSZveO4jxI8mlvnJ1-2FTVUPRKOBAKu7LkV6-2BwHypfb32xqBGhY-2FCpMYZ7tsyCG9emFVz-2FCqbYoLu-2FeQdLw2DaFJQCzfmbKJygCRwjNr9yCyt-2BZhW-2BOR41CAWgh7bmxCNDdYNs6hasEGX7nLSe0HdWu-2BDEQ06xXPQpEg-3D-3D"><img src="https://Newsletter-Orazca-Relic.util.repl.co/lhd.png" alt="Local Hack Day" class="featured" /></a>
+				</td>
+			</tr>
+			<tr height="40" />
+			<tr>
+				<td>
+					<span class="text">
+Sharing is caring, so join the hacker community at Major League Hacking=E2=80=99s Local Hack Day: Share. This week-long event on March 28th - April 5th is full of festivities to celebrate hacking whether you=E2=80=99re a seasoned community member or an energetic first-timer. You can participate in beginner-friendly technical workshops, play around at mini-events, and complete challenges of the technical, social, and design variety to earn points and swag. <a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlJvwTIJVGs-2FShJCkqD45-2FPeHtPnTNTaGYRAkIg7Bd8Aq2Psjhn5r3b5ey8h5dvEcetFeWISuFOLMOJYcRIWJTyhN72kTaRzzDpIauZAyqGEKrgLOZMJTfGjc7pWKXYnqhA-3D-3D_TBQ_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq5pJspJS7HQzitxixxiYlkWoiWtaebKk4jhn9EdGwvM1hsmzKt4rOUN1KHaYTJH4CuUfrYSvfYc6XxVHOA6HN6azpvcEZ0uJob-2B-2BEMyffkcHLVbI4TdlaaSNXmbrUOx-2FG94r2T0i8eTrMLommVNxPscWd774cB0XxPGRRj4YAuhVGxjQpSBu5l9mFMseatvWj-2BMQguYCPBYEr78ol7uF1mmFWfWiimpQrgRbr1W2jGNgQ-3D-3D">Sign up now to earn your first point at lhd.mlh.io</a>!=20
+					</span>
+				</td>
+			</tr>
+			<tr height="40" />
+			<tr>
+				<td style="color: #eeff00;font-size:20px;">
+					<img src="https://newsletter-images--timmy-i-chen.repl.co/prompt.png" alt=">" height="14" /><b>&lt;footer&gt;That&#039;s all!&lt;/footer&gt;
+</b>
+				</td>
+			</tr>
+      <tr height="20" />
+			<tr>
+				<td align="center">
+          <a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlFwVos3yT7Z4flOz6GvZ-2BykJuExCUTE7gSwoHqse0cV8SDei_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq6Pv9AW1nZ4XgmUIgBAMUqhiMRZo1u9ShVmUxogeXvU99tzmvJdPgCS-2FR-2B2c2jyWeQ0f1EyKcrXepj33in-2Bj-2BcuZivN610WMjWS1r7RAbA-2BUmA4Dc1X1ssT6Xp7mvskpv3gar7DgqKzCIoywp4AEyxe1eJ1Rk3Z-2Bt7gwJYlnl5n6jxRq6icsRqW9RsT1ShIzL1dt0jhUtH0GeZhey873j-2FE8xulIT3CMaJP0oLnrF5yjA-3D-3D">
+					<img=20
+src="https://Newsletter-Orazca-Relic.util.repl.co/privacy.gif" alt="byeee"/>
+          </a>
+				</td>
+			</tr>
+			<tr height="20" />
+			<tr>
+				<td>
+					<span class="text">
+Thanks for reading this week=E2=80=99s edition of the Replit newsletter. I hope you found something interesting, and take advantage of some of our new features. We should also note that we=E2=80=99ve updated our privacy policy to detail how we are compliant with FERPA, COPPA, GDPR, CCPA, and many other privacy regulations. To that end, we removed Google Analytics script and cookie from Replit front-end, so it will not track you. You can read more about these changes <a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlFwVos3yT7Z4flOz6GvZ-2BykJuExCUTE7gSwoHqse0cV8wuG2_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq7ZNNVlrJioyiFBphNxaWybzvPVh5reektyJJaLG6MjAWKTWzOb272E8HtHuujpEI0Ro7pOdIQdS1gJqASAkBkNrn9bP1CH7e4bqwEtbDUetKOqwmw-2BmwD2Dz01xoeeT2oSbhWho-2BNqiXRu1DuhPOMXCyI5AOqYB5vWynIwrNHHx7WDrC97KMm-2ByHxUEaO1O-2FcafMDUdfNdgX-2
+FQu5npcJPGqfNNnlZPmp64aDdycwFNng-3D-3D">here</a>. Have a great rest of your week, and we hope to see you again soon!
+          </span>
+			</tr>
+      <tr height="40" />
+			<tr>
+				<td style="color: #ccff99;font-size:20px;">
+					<img src="https://newsletter-images--timmy-i-chen.repl.co/prompt.png" alt=">" height="14" /><b>&lt;!--Goodbye!--&gt;</b>
+				</td>
+			</tr>
+			<tr height="20" />
+			<tr>
+				<td>
+					<span class="text">As always, please feel free to give us feedback on our <a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlL9m8O-2BZM-2FXNRjZAN9lLVeVgEz99FadL03lMBgCaR-2FgBQwzG_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq5y162b5oZvX81xSnMXGsilPMDcViCJL70-2BGKUAbKDWiilsru2DA-2Bdej3cvf8hZdonAlhWxTXhAN-2BYgpi6fPaexiLdbfKeth4GWeYr7d-2Fs-2B78-2BPPcQ9rFdFYHm9lnXKRPgjnGXE7VX1Y2DvuHZZYdDbNidpdIhtonWnoJ5Sd7XgxSptrIYFAs1ICghx0QYhmqQJulNcesBDqySML3xeazYBN5f52cCcxWlXwi5l6ZaXdg-3D-3D" style="color:#55B0E1;" class="link">feedback boards!</a>
+          <br /><br />
+          Best,<br />
+          Nathan & the rest of the Repl.it Team</span>
+				</td>
+			</tr>
+					<tr height="20" />
+			<tr>
+				<td align="center">
+					<span class="text">Follow us on <a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlCdkS5bC6J5Hs6GCJVzNpuG29tC0Fc9YHEvUCAL8MolxL8jS_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq7KhCDhyUxQ56-2BA3gFSy4GLbXdhft0ZOZS4krp-2BXdaupfiZV7LRWyspDHdb620dFPFOEGEWdbCMi-2B-2FB4OcGE2uXhqxiFarr-2FrIryPv-2FLXBd2ypBKzZttVBWNQUu8O6TGsnx2sJQoHOiRg30srQDg2go1yqI2GHLDai8rDwB1xoQYr1lqbcJELxIoc-2BX-2BSHiCSyrpFeOQsOfoQctKAdDvKVREbWfK01KcTrMdnWWDwfhBQ-3D-3D" style="color:#55B0E1;" class="link">Twitter</a>|<a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlAuMgVFpzRNl-2F-2FC8hpb3td2-2BgPPsbN51fHWQ0-2BRk7apEP6US_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq5xPMAc3R0nKY-2FiXOAWdWMC-2FPyZIA6D94-2BGccuEfoW-2FGnmzvfGb7DRkOPIjtNeTJ-2FDl8nHt1-2FkY5LlegbAAOFP-2B3uLKwWZ2lQPV4nEhGs0c-2FS0GTHFwBeil7APZlHldasBjBQsRLguKNCIEbhVDSyJQIOzM7cwuOQpj3sTRPSdJUGOTiGgYaLkDLBc52DY-2BhkF0LP8W4A1byeWWR-2F4dGz7HFOlJBD-2Fr1F0oPGUD6k2EDg-3D-3D"style="color:#55B0E1;" class="link">Facebook</a>|<a href="http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlO04RQ4sDINvXfPH-2F3Dthmgo8R1egNhf7KU3HpCJj9pQ_pkV_7tDwTPu5htmgafyZhStInwzfJsG8hgRHi7WuELxPKs9FogtIyc3LQS4sYm-2BCxlzBAnSUjiJXgJq0NErQ65USCjubE7Ar4ZnfJna86kJ5Jek9121nf2FKTKUYAXyKXQH-2BAghiBJQa5U61e5JG3DwVcHomDXKo6g8p-2Fheh247xcOALw0SRVtBWZgdbTjHniXw-2BnINEmtlxHE9vgHjgwfqFon2REXlY0giGxB63as-2BSn-2Fn-2Fo-2BefvetU0Hd-2F9bHyQW9BoakjTGjkPdoe5aDxC5P1wBU-2BQWbmt3ZKp8zxm4uPnq6XeLtNTSJFeq0xVY7Ntn6Vfs1d8LAm-2BFkrS-2BwfBP5F7wZXQByL0yqlDNYmyTJW3-2FlvbSxA3qNJEic4ZmtWy7XDUQHnsMvZmnLLuqEHmZ8SdVE1e3a8XbdoUSXrO7z4QM5Hur7AJAw4TGRs9DFtlNdpcuUeZn6RE2gkYx4sS7SSpgctMfGw4p9T3yFgWEIM-2B-2FwkGd1KL-2B8J-2BKOd-2BBUyIlB-2B1qQnSiXmnzHhj2Dw95sr5A-3D-3D" style="color:#55B0E1;" class="link">Instagram</a><br><br> <a href="http://url1361.repl.it/asm/unsubscribe/global/?user_id=8107274&data=nzTWOfN6GQtgyHz3cNxJsjX-Fm6QUIXBBzCznZ7_TU25ec6gpvrKT0W_S9oXRBwyfwWHdsLwPBnWju9eM04FuPha7s1Ppy86UcOYujmqFg6qnyDbB1Yy4Nn24E0Qqoe81cZutqg9KbOP3dC5CMOtN8ehZ-aRdChkhdL2eIMqNneZcqzo7SImQfoxHwZII1yzKZ1JxRhFJZV5ApZo54jHZuEgReXModfbbwaIEZxMGV22uRtrtR7yzPgkDALqPX4ZpvSzR7glL704FIk59xJNuaVnExs7V5GjCpY3vdaqfmuMb4XJ0DRgmh4d7WrNpnsX_ik6T8wDRW1JeTC1peVnA9H_kCx5eBLk2YOTTxsV9WtPCfALFtYp9pS2bxpzVAPFRwzGJYLmzu5BFpWG_djV9Ljw5WaSEkWp3c65rcyF6tKxEnEzIuIu-pSzmg-WcM1FkcLW9KIQ2gE9s89MvvdHZKr22RaZ_Lf8_PxGkWO4rcrZfBGZJfAsL0Dg_zaNzK0LRDbOxiRxR8O43AmtcyAFQQ9hoHhFoOj-GM2tE9yp72ud2m3n9pmmmncadeABudYVvbnWfzKbHI8WoQ_zdgIfCcJ6wSKYyi9wTU1EMdMhAjvUSr0euN_WfWrB1spa4T8lrB8S49YsLYNzJi3xe3wvzg==" style="color:#55B0E1;" class="link">Unsubscribe</a></span>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+<img src="http://url1361.repl.it/wf/open?upn=RSAJq9wzhOPYXubtcdLbuk9M1x40Aw7CBWHbL-2BKYOWuF6dDfGpwnO4wR-2F5ty5gzWkuWdxodl-2BcLRNi3MWqtLr1WOybVgzLkK9b8akOuRfIqffnp-2BUX2ITPoI2Dg-2F6tYZme0IDV53zh7jsA-2B99zXOK34EJgK2-2B1pmW8PUhkS9T3uJ1AZhk9JLRYWUEbQsS8kVeTnSVIefspeSfVrO2i4fc-2B7NrDQ1oSxWTxx5vlre5UMTuZzO3uqKSN9xramsUAo96KF11q2LNbpcGckx2-2FiqvQBp-2BufqgC7q21xludm1H0HtuSdjsbN9SJLc9D0baY-2F5vtdEyZ7J2KHAStx5eXGEt28eOWMlIJl5woHWi8jscYnhTvflnSXcwb9PcqXR7CkNZKt0P422TQcKfDZLfC1muoUnl6gcVfyWHtC6anWgHQKRZ4iwKCTPsiwZqM5MsnypjUwrvDxGCsEJL28qzc4kBcTGcrvIiFLqHUuj4GT4N8T9Wd3jbIHwrVLh94SLB7T8hIcSpEGkgMv0nrGubODCww-3D-3D" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/>
+</body>
+</html>
